@@ -1,0 +1,19 @@
+#+TITLE: Probe Usage
+
+Review of files that are using the ~Probe~ API.
+
+* Links from Mike
+
+https://cs.k8s.io/?q=Probe%20struct&i=nope&files=&repos=
+
+https://cs.k8s.io/?q=InitialDelaySeconds&i=nope&files=&excludeFiles=&repos=
+
+https://github.com/kubernetes/kubernetes/blob/a5622f3f6e1f5d5ffd066d799204ea0c6d1a49e2/cmd/kubeadm/app/util/staticpod/utils.go#L246-L287
+
+https://github.com/kubernetes/kubernetes/blob/a5622f3f6e1f5d5ffd066d799204ea0c6d1a49e2/staging/src/k8s.io/kubectl/pkg/describe/describe.go#L1929
+
+another spot to "improve" see test/e2e/ where there exist probes.. will need some clones of those tests with added subsecond versions..
+
+* kubernetes/autoscaler
+
+vendored file: https://github.com/kubernetes/autoscaler/blob/ec2681b0ae2afb6e7950abc0ca7465764891b80d/cluster-autoscaler/vendor/k8s.io/api/core/v1/types.go
