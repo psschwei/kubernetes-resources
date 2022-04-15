@@ -10,13 +10,12 @@ spec:
     - /bin/sh
     - -c
     - sleep 1; touch /tmp/healthy; sleep 5
- #   - sleep 1; touch /tmp/healthy; sleep 60; rm -rf /tmp/healthy
+#    - sleep 1; touch /tmp/healthy; sleep 60; rm -rf /tmp/healthy
     startupProbe:
       exec:
         command:
         - cat
         - /tmp/healthy
-      periodSeconds: 100
-      initialDelaySeconds: 0
-      readSecondsAs: milliseconds
+      periodSeconds: 1 
+      initialDelaySeconds: 1
       failureThreshold: 30
